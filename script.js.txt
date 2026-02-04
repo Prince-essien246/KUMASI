@@ -1,0 +1,29 @@
+const gameOutput = document.getElementById('game-output');
+const gameInput = document.getElementById('game-input');
+const submitBtn = document.getElementById('submit-btn');
+
+const GAME_NAME = "Kumasi Vengeance";
+const MAP_LOCATIONS = {
+  "Mama Aku's": {description: "A local chop bar", connections: ["Kejetia", "Adum"]},
+  // Add more locations...
+};
+
+let player = {
+  name: "Kwame 'K-Vee' Adu",
+  location: "Mama Aku's",
+  health: 100
+};
+
+function startGame() {
+  gameOutput.innerText = `Welcome to ${GAME_NAME}!\nYou are at ${player.location}`;
+}
+
+submitBtn.onclick = () => {
+  const input = gameInput.value;
+  gameOutput.innerText += `\n> ${input}`;
+  // Add game logic here...
+  gameInput.value = '';
+};
+
+startGame();
+

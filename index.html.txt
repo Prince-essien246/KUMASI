@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Kumasi Vengeance</h1>
+  <div id="game-output"></div>
+  <input id="game-input" type="text">
+  <button id="submit-btn">Enter</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
